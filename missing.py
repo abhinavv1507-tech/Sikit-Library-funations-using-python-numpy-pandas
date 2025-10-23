@@ -18,7 +18,7 @@ if (choice==1):
     mean_val_col = data['Marks'].mean()
     data['Marks'] = data['Marks'].fillna(mean_val_col)
 
-if (choice==2):
+elif (choice==2):
     median_val_col = data['Marks'].median()
     data['Marks'] = data['Marks'].fillna(median_val_col)
     
