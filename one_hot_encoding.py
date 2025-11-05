@@ -7,6 +7,8 @@ dict2 = {
 }
 
 data=pd.DataFrame(dict2)
+print(data)
+print("------")
  
 unique_colour = []
 for i in data['Colour']:
@@ -17,3 +19,4 @@ for colour in unique_colour:
     data[f'Colour_{colour}'] = [1 if col== colour else 0 for col in data['Colour']]
 
 data = data.drop('Colour', axis=1)
+print(data)
